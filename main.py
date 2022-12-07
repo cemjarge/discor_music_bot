@@ -17,9 +17,10 @@ bot.remove_command('help')
 
 #register the class with the bot
 async def main():
-    await bot.add_cog(help_cog(bot))
-    await bot.add_cog(music_cog(bot))
-    await bot.run("MTA0ODk2NDEyOTQwNDIzNTgwNg.GhVD77.Yms-t0c91n_oHGehe50BSK_YA5axZHV43vE6_0")
+    async with bot:
+        await bot.add_cog(help_cog(bot))
+        await bot.add_cog(music_cog(bot))
+        bot.run("MTA0ODk2NDEyOTQwNDIzNTgwNg.GJjNkY._7vf4n5xFfSxeldHTA5b7fY2L4OAJoHwpQ6EB")
 
 asyncio.run(main())
 

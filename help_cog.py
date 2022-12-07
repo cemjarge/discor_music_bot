@@ -26,7 +26,7 @@ General commands:
             for channel in guild.text_channels:
                 self.text_channel_list.append(channel)
 
-        await self.send_to_all(self.help_message)        
+        #await self.send_to_all(self.help_message)        
 
     @commands.command(name="help", help="Displays all the available commands")
     async def help(self, ctx):
