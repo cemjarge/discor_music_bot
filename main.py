@@ -20,7 +20,7 @@ async def main():
     async with bot:
         await bot.add_cog(help_cog(bot))
         await bot.add_cog(music_cog(bot))
-        bot.run("MTA0ODk2NDEyOTQwNDIzNTgwNg.GJjNkY._7vf4n5xFfSxeldHTA5b7fY2L4OAJoHwpQ6EB")
+        bot.run("YOUR_KEY")
 
 asyncio.run(main())
 
